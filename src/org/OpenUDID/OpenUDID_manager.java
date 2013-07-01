@@ -180,7 +180,7 @@ public class OpenUDID_manager implements ServiceConnection{
 	/*
 	 * Used to sort the OpenUDIDs collected by occurrence
 	 */
-	private class ValueComparator implements Comparator {
+	private class ValueComparator implements Comparator<Object> {
 		public int compare(Object a, Object b) {
 
 			if(mReceivedOpenUDIDs.get(a) < mReceivedOpenUDIDs.get(b)) {
